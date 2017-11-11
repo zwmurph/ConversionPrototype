@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--Use this XML layout to define what each element of the list should look like.--><!--Use 'xmlns:tools="http://schemas.android.com/tools"' in the parent view--><!--so that 'tools:text' can be used to show sample text-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/baseCurrencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="£2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_arrow_forward_black_18dp" />
+
+        <TextView
+            android:id="@+id/conversionCurrencyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            tools:text="€2,40" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="12 Apr 2016" />
+
+    <!--TODO: Formatting for primary & secondary text-->
+    <!--Primary text formatting-->
+    <!--android:textAppearance="?android:attr/textAppearanceListItemSmall"-->
+    <!--android:textColor="@color/primaryText"-->
+
+    <!--Secondary text formatting-->
+    <!--android:textAppearance="?android:attr/textAppearanceListItemSecondary"-->
+    <!--android:textColor="@color/secondaryText"-->
+
+</LinearLayout>
